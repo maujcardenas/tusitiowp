@@ -7,7 +7,7 @@
 >
     <h1>{title}</h1>
     <p>
-        Welcome! This entire site compiles automatically on Cloudflare Pages
-        without any local Node.js installation.
+        Welcome to my site! This entire site compiles automatically on
+        Cloudflare Pages without any local Node.js installation.
     </p>
 </main>
