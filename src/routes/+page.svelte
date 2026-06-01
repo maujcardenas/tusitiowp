@@ -149,8 +149,7 @@
                 Soporte gratuito de por vida para clientes. Transparencia y
                 confidencialidad garantizada.
             </p>
-            <a href="mailto:hola@ejemplo.com" class="btn outline"
-                >hola@mauriciocardenas.com</a
+            <a href="https://wa.me/593984029541" class="btn outline">WhatsApp</a
             >
         </div>
     </footer>
