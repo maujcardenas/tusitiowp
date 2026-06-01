@@ -9,6 +9,20 @@
                 "Hasta 100k visitas/mes, uptime 99.99%, SSL y backups diarios.",
         },
         {
+            titulo: "Hosting Infinite 10GB",
+            precio: "$100",
+            periodo: "/anual",
+            descripcion:
+                "Hasta 100k visitas/mes, uptime 99.99%, SSL y backups diarios.",
+        },
+        {
+            titulo: "Hosting Universe 16GB",
+            precio: "$180",
+            periodo: "/anual",
+            descripcion:
+                "Hasta 100k visitas/mes, uptime 99.99%, SSL y backups diarios.",
+        },
+        {
             titulo: "Dominio Web",
             precio: "$16",
             periodo: "/anual",
@@ -25,11 +39,18 @@
 
     const serviciosDesarrollo = [
         {
-            titulo: "Desarrollo Web WordPress",
+            titulo: "Desarrollo Web WordPress - Mediano",
             precio: "$180",
             periodo: "pago único",
             descripcion:
                 "Sitio web adaptable de 4 a 10 secciones. Incluye blog, formularios de contacto, iteraciones de diseño y guía de manejo.",
+        },
+        {
+            titulo: "Desarrollo Web WordPress - Grande",
+            precio: "$280",
+            periodo: "pago único",
+            descripcion:
+                "Sitio web adaptable de 10 o más secciones. Incluye blog, formularios de contacto, iteraciones de diseño y guía de manejo.",
         },
         {
             titulo: "E-commerce & Membresías",
@@ -43,15 +64,15 @@
     const portafolio = [
         { nombre: "Himchari TKD", url: "http://himcharitkd.com" },
         { nombre: "Pacto RCF", url: "http://pacto-rcf.com" },
-        { nombre: "Termas Mamallacta", url: "http://mamallacta.com" },
+        { nombre: "Hotel Mamallacta", url: "http://mamallacta.com" },
         { nombre: "Maigua Living", url: "http://maigualiving.com" },
     ];
 </script>
 
 <main>
     <header class="hero">
-        <h1>Mauricio Cárdenas</h1>
         <h2>Desarrollo y Alojamiento Web</h2>
+        <h1>Por: Mauricio Cárdenas</h1>
         <p>
             Soluciones digitales minimalistas, rápidas y seguras para escalar tu
             negocio. Todo lo que necesitas, sin complicaciones.
