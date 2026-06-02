@@ -1,8 +1,9 @@
 <script>
+    import FeaturedCards from "$lib/FeaturedCards.svelte";
     // Datos de los servicios basados en la cotización
     const serviciosRecurrentes = [
         {
-            titulo: "Hosting Premium 6GB",
+            titulo: "Hosting 6GB",
             precio: "$80",
             periodo: "/anual",
             descripcion:
@@ -79,6 +80,8 @@
         </p>
         <a href="#contacto" class="btn">Solicitar Cotización</a>
     </header>
+
+    <FeaturedCards />
 
     <section class="section">
         <div class="section-header">
