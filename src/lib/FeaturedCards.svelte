@@ -5,8 +5,7 @@
             nombre: "Plan Instalación WP",
             enfoque:
                 "Para quienes deseen libertad de diseñar con sistema WordPress",
-            precioAnual: "$108",
-            precioUnico: null,
+            precio: "$108",
             detallesPrecio: "renovables cada año",
             caracteristicas: [
                 "Infraestructura: 1 Dominio + Hosting 6Gb",
@@ -21,8 +20,7 @@
             nombre: "Plan Profesional",
             enfoque:
                 "Para mostrar servicios (profesionales, artísticos, academias, etc.)",
-            precioAnual: "$108",
-            precioUnico: "$180",
+            precio: "$288",
             detallesPrecio: "$108 renovable/año + $180 una sola vez",
             caracteristicas: [
                 "Infraestructura: 1 Dominio + Hosting 6Gb",
@@ -37,8 +35,7 @@
             nombre: "Plan E-Commerce",
             enfoque:
                 "Para marcas que buscan vender múltiples productos o servicios en línea",
-            precioAnual: "$108",
-            precioUnico: "$360",
+            precio: "$468",
             detallesPrecio: "$108/anual + $360 una sola vez",
             caracteristicas: [
                 "Infraestructura: 1 Dominio + Hosting 6Gb",
@@ -75,14 +72,7 @@
 
                     <div class="price-block">
                         <div class="main-price">
-                            {#if paquete.precioUnico}
-                                <strong>{paquete.precioUnico}</strong>
-                                <span class="divider">+</span>
-                            {/if}
-                            <strong>{paquete.precioAnual}</strong>
-                            <span class="period"
-                                >/{paquete.precioUnico ? "inicio" : "año"}</span
-                            >
+                            <strong>{paquete.precio}</strong>
                         </div>
                         <p class="price-legend">{paquete.detallesPrecio}</p>
                     </div>
@@ -196,10 +186,7 @@
     }
 
     .enfoque {
-        font-size: 0.95rem;
         color: #666;
-        line-height: 1.5;
-        margin: 0;
         min-height: 2.85rem; /* Mantiene la alineación visual entre tarjetas */
     }
 
