@@ -194,7 +194,10 @@
     .price-block {
         margin: 2.5rem 0;
         padding-bottom: 1.5rem;
-        border-bottom: 1px solid #f0f0f0;
+        border-style: dotted;
+        border-color: #666;
+        border-width: 1px 0px 1px 0px;
+        padding: 1rem 0rem 1rem 0rem;
     }
 
     .main-price {
@@ -202,25 +205,10 @@
         align-items: baseline;
         gap: 0.25rem;
         color: #111;
-    }
-
-    .main-price strong {
         font-size: 2.5rem;
         font-weight: 700;
         letter-spacing: -0.02em;
         line-height: 1;
-    }
-
-    .main-price .divider {
-        font-size: 1.5rem;
-        color: #aaa;
-        margin: 0 0.25rem;
-    }
-
-    .main-price .period {
-        font-size: 0.95rem;
-        color: #888;
-        margin-left: 0.25rem;
     }
 
     .price-legend {
