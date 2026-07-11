@@ -8,9 +8,9 @@
             precio: "$108",
             detallesPrecio: "renovables cada año",
             caracteristicas: [
-                "Infraestructura: 1 Dominio + Hosting 6Gb",
-                "Comunicación: 3 correos empresariales (1Gb c/u)",
-                "Diseño: Instalación limpia de WP totalmente actualizado",
+                "1 Dominio + Hosting 6Gb",
+                "3 correos empresariales (1Gb c/u)",
+                "Instalación limpia de WP totalmente actualizado",
                 "Autonomía total de edición",
             ],
             destacado: false,
@@ -23,10 +23,10 @@
             precio: "$288",
             detallesPrecio: "$108 renovable/año + $180 una sola vez",
             caracteristicas: [
-                "Infraestructura: 1 Dominio + Hosting 6Gb",
-                "Comunicación: 3 correos empresariales (1Gb c/u)",
-                "Diseño: Sitio web a medida (5-10 secciones)",
-                "Funcionalidad: Formularios de contacto, redes sociales y blog",
+                "1 Dominio + Hosting 6Gb",
+                "3 correos empresariales (1Gb c/u)",
+                "Sitio web a medida (5-10 secciones)",
+                "Formularios de contacto, redes sociales y blog",
             ],
             destacado: true, // Este plan se llevará la atención visual
         },
@@ -38,10 +38,10 @@
             precio: "$468",
             detallesPrecio: "$108/anual + $360 una sola vez",
             caracteristicas: [
-                "Infraestructura: 1 Dominio + Hosting 6Gb",
-                "Comunicación: 3 correos empresariales (1Gb c/u)",
-                "Diseño: Sitio web optimizado (5-10 secciones)",
-                "Funcionalidad: Módulo completo de E-commerce y pasarela de pagos",
+                "1 Dominio + Hosting 6Gb",
+                "3 correos empresariales (1Gb c/u)",
+                "Sitio web optimizado (5-10 secciones)",
+                "Módulo completo de E-commerce",
             ],
             destacado: false,
         },
@@ -49,50 +49,45 @@
 </script>
 
 <section class="packages-section">
-    <div class="container">
-        <div class="header-meta">
-            <span class="tag">Precios transparentes</span>
-            <h2>Planes Diseñados a tu Medida</h2>
-        </div>
+    <div class="header-meta">
+        <span class="tag">Precios transparentes</span>
+        <h2>Planes Diseñados a tu Medida</h2>
+    </div>
 
-        <div class="packages-grid">
-            {#each paquetes as paquete}
-                <article
-                    class="package-card"
-                    class:featured={paquete.destacado}
-                >
-                    {#if paquete.destacado}
-                        <span class="badge">Recomendado</span>
-                    {/if}
+    <div class="packages-grid">
+        {#each paquetes as paquete}
+            <article class="package-card" class:featured={paquete.destacado}>
+                {#if paquete.destacado}
+                    <span class="badge">Recomendado</span>
+                {/if}
 
-                    <div class="card-header">
-                        <h3>{paquete.nombre}</h3>
-                        <p class="enfoque">{paquete.enfoque}</p>
+                <div class="card-header">
+                    <h3>{paquete.nombre}</h3>
+                    <p class="enfoque">{paquete.enfoque}</p>
+                </div>
+
+                <div class="price-block">
+                    <div class="main-price">
+                        <strong>{paquete.precio}</strong>
                     </div>
+                    <p class="price-legend">{paquete.detallesPrecio}</p>
+                </div>
 
-                    <div class="price-block">
-                        <div class="main-price">
-                            <strong>{paquete.precio}</strong>
-                        </div>
-                        <p class="price-legend">{paquete.detallesPrecio}</p>
-                    </div>
+                <ul class="specs-list">
+                    {#each paquete.caracteristicas as item}
+                        <li>{item}</li>
+                    {/each}
+                </ul>
 
-                    <ul class="specs-list">
-                        {#each paquete.caracteristicas as item}
-                            <li>{item}</li>
-                        {/each}
-                    </ul>
-
-                    <div class="action-footer">
-                        <a href="#contacto" class="btn-select">
-                            {paquete.destacado
-                                ? "Iniciar Proyecto Pro"
-                                : "Seleccionar Plan"}
-                        </a>
-                    </div>
-                </article>
-            {/each}
-        </div>
+                <div class="action-footer">
+                    <a href="#contacto" class="btn-select">
+                        {paquete.destacado
+                            ? "Iniciar Proyecto Pro"
+                            : "Seleccionar Plan"}
+                    </a>
+                </div>
+            </article>
+        {/each}
     </div>
 </section>
 
@@ -101,12 +96,6 @@
     .packages-section {
         padding: var(--space-xl, 6rem) 0;
         background-color: #fafafa;
-    }
-
-    .container {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 0 var(--space-md, 2rem);
     }
 
     .header-meta {
